@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #f9faff;
+}
+
 /* root css style */
 :root{
     --text-color: #25282B;
@@ -10,6 +14,7 @@
     --text-color-three: #333333;
     --text-color-four: #828282;
     --text-color-five: black;
+    --card-pera-color: #828282;
 }
 /* root css style */
 /* shared style */
@@ -35,7 +40,9 @@
   font-optical-sizing: auto;
   font-weight: 400;
 }
-
+.height{
+    height: 100vh;
+}
 /* header styles */
 /* navbar style */
 .nav-container{
@@ -103,5 +110,50 @@
     z-index: -1;
 }
 /* hero style */
-
 /* header styles */
+/* main part start */
+.project-title{
+    font-size: 48px;
+    text-align: center;
+    color: var(--text-color);
+}
+.project-container{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    max-width: 980px;
+    height: 524px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.project-container:nth-child(even) .project-content{
+    order: 1;
+}
+.project-content{
+    width: 496px;
+    padding: 0px 50px;
+}
+.project-img{
+    width: 496px;
+    height: 100%;
+}
+.project-heading{
+    font-size: 40px;
+    color: var(--text-color);
+}
+.project-pera{
+    font-size: 18px;
+    color: var(--card-pera-color);
+    margin: 30px 0px;
+}
+.project-btn{
+    padding: 8px 24px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+/* main part end */
