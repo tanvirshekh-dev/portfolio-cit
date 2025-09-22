@@ -117,6 +117,17 @@ body{
     text-align: center;
     color: var(--text-color);
 }
+.project > .project-title::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--text-color-two);
+    height: 4px;
+    width: 100px;
+    bottom: -120px;
+    border-radius: 2px;
+}
 .project-container{
     justify-content: center;
     align-items: center;
@@ -155,5 +166,56 @@ body{
     font-size: 18px;
     border-radius: 40px;
     border: 2px solid black;
+}
+/* contact form */
+.contact > .project-title::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--text-color-two);
+    height: 4px;
+    width: 100px;
+    bottom: -2070px;
+    border-radius: 2px;
+}
+.form-container{
+    flex-direction: column;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.form-container label{
+    font-size: 16px;
+    color: #25282B;
+    padding-bottom: 8px;
+}
+.form-container input,
+.form-container textarea{
+    padding: 12px 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.form-container textarea{
+    resize: vertical;
+}
+.footer-btn{
+    text-align: right;
+}
+.footer-social-icon{
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.footer-pera{
+    text-align: center;
+    font-size: 16px;
+    color: #828282;
+}
+.footer-shape{
+    width: 100%;
 }
 /* main part end */
